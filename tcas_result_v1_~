@@ -1,0 +1,31 @@
+
+
+pastcase:tcas1020
+failcase:tcas1
+Cause-effect chain for <bound method StateGDB.debuggee of <StateGDB.StateGDB instance at 0x83930ac>>
+====================================================================================================
+
+Arguments are  958 1 1 2597  574 4253 0  399  400 0 0 1 (instead of  958 1 1 2297  574 4253 0  399  300 0 0 1)
+therefore at 63, argv[9] = "400" (instead of "300")
+therefore at 104, argv[9] = "400" (instead of "300")
+therefore at 58, argv[9] = "400" (instead of "300")
+therefore at 81, argv[9] = "400" (instead of "300")
+therefore at 99, result = 1 (instead of 0)
+therefore at 141, argv[9] = "400" (instead of "300")
+therefore at 172, argv[9] = "400" (instead of "300")
+therefore the run fails.
+
+
+pastcase:tcas307
+failcase:tcas416
+Cause-effect chain for <bound method StateGDB.debuggee of <StateGDB.StateGDB instance at 0x839308c>>
+====================================================================================================
+
+Arguments are  644 1 1 1986  596 2448 0  741  400 1 0 0 (instead of  608 1 1  674  216  442 0  741  400 0 0 0)
+therefore at 63, intent_not_known = 0 (instead of 1)
+therefore at 104, intent_not_known = 0 (instead of 1)
+therefore at 81, intent_not_known = 0 (instead of 1)
+therefore at 99, result = 1 (instead of 0)
+therefore at 141, need_upward_RA = 1 (instead of 0)
+therefore at 172, argv[6] = "2448" (instead of "442")
+therefore the run fails.

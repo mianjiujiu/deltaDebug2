@@ -1,0 +1,22 @@
+
+
+pastcase:tcas59
+failcase:tcas30
+Cause-effect chain for <bound method StateGDB.debuggee of <StateGDB.StateGDB instance at 0x8410f4c>>
+====================================================================================================
+
+Arguments are  832 1 1 4454  148 4683 3  501  640 0 1 1 (instead of  568 1 1 3423   52 3011 3  499  640 0 1 1)
+therefore at 141, need_upward_RA = 1 (instead of 2637812)
+therefore at 172, argv[8] = "501" (instead of "499")
+therefore the run fails.
+
+
+pastcase:tcas28
+failcase:tcas165
+Cause-effect chain for <bound method StateGDB.debuggee of <StateGDB.StateGDB instance at 0x841380c>>
+====================================================================================================
+
+Arguments are  990 1 1 3490  323  281 2  640  741 0 0 1 (instead of  594 1 1 2484  121 1193 2  500  740 0 0 1)
+therefore at 141, need_upward_RA = 0 (instead of 2637812)
+therefore at 172, argv[9] = "741" (instead of "740")
+therefore the run fails.

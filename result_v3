@@ -1,0 +1,40 @@
+
+
+pastcase:tcas1
+failcase:tcas55
+Cause-effect chain for <bound method StateGDB.debuggee of <StateGDB.StateGDB instance at 0x9a470ac>>
+====================================================================================================
+
+Arguments are ./print_tokens/inputs/newtst146.tst (instead of ./print_tokens/inputs/newtst148.tst)
+therefore at 154, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 77, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 165, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 173, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 86, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 100, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 451, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 470, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 467, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 461, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 205, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 304, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 108, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 120, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 564, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 328, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 488, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 511, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 178, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 88, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 465, token_str = "l\226\004\b\000\000\000\000\000\000\000\000\364?(\000\340D(\000\003\000\000\000\070\363\377\277\016\256\030\000\340D(\000і\004\b\003\000\000\000\000\370\376\267\364?(\000\000\000\000\000\000\000\000\000X\363\377\277\221\217\004\bі\004\b\001\000\000\000\003\000\000" (instead of "J\226\004\b\000\000\000\000\000\000\000\000\364?(\000\340D(\000\003\000\000\000\070\363\377\277\016\256\030\000\340D(\000і\004\b\003\000\000\000\000\370\376\267\364?(\000\000\000\000\000\000\000\000\000X\363\377\277\221\217\004\bі\004\b\001\000\000\000\003\000\000")
+therefore at 130, token_str = "lambdaNo\377\000\000\000\364?(\000\340D(\000\003\000\000\000\070\363\377\277\016\256\030\000\340D(\000і\004\b\003\000\000\000\000\370\376\267\364?(\000\000\000\000\000\000\000\000\000X\363\377\277\221\217\004\bі\004\b\001\000\000\000\003\000\000" (instead of "J0Bey,\000\000\000\000\000\000\364?(\000\340D(\000\003\000\000\000\070\363\377\277\016\256\030\000\340D(\000і\004\b\003\000\000\000\000\370\376\267\364?(\000\000\000\000\000\000\000\000\000X\363\377\277\221\217\004\bі\004\b\001\000\000\000\003\000\000")
+therefore at 141, token_str = "lambdaNo\377\000\000\000\364?(\000\340D(\000\003\000\000\000\070\363\377\277\016\256\030\000\340D(\000і\004\b\003\000\000\000\000\370\376\267\364?(\000\000\000\000\000\000\000\000\000X\363\377\277\221\217\004\bі\004\b\001\000\000\000\003\000\000" (instead of "J0Bey,\000\000\000\000\000\000\364?(\000\340D(\000\003\000\000\000\070\363\377\277\016\256\030\000\340D(\000і\004\b\003\000\000\000\000\370\376\267\364?(\000\000\000\000\000\000\000\000\000X\363\377\277\221\217\004\bі\004\b\001\000\000\000\003\000\000")
+therefore at 216, token_str = "lambdaNo\000\000\000\000\364?(\000\340D(\000\003\000\000\000\070\363\377\277\016\256\030\000\340D(\000і\004\b\003\000\000\000\000\370\376\267\364?(\000\000\000\000\000\000\000\000\000X\363\377\277\221\217\004\bі\004\b\001\000\000\000\003\000\000" (instead of "J0Bey\000\000\000\000\000\000\000\364?(\000\340D(\000\003\000\000\000\070\363\377\277\016\256\030\000\340D(\000і\004\b\003\000\000\000\000\370\376\267\364?(\000\000\000\000\000\000\000\000\000X\363\377\277\221\217\004\bі\004\b\001\000\000\000\003\000\000")
+therefore at 519, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 379, therefore at 394, therefore at 245, therefore at 528, therefore at 111, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 118, token_str = "\377\226\004\b\000\000\000\000\000\000\000\000\364?(\000\340D(\000\003\000\000\000\070\363\377\277\016\256\030\000\340D(\000і\004\b\003\000\000\000\000\370\376\267\364?(\000\000\000\000\000\000\000\000\000X\363\377\277.\221\004\bі\004\b\001\000\000\000\003\000\000" (instead of "\377\227\004\b\000\000\000\000\000\000\000\000\364?(\000\340D(\000\a\000\000\000\070\363\377\277\016\256\030\000\340D(\000\203\227\004\b\a\000\000\000\000\370\376\267\364?(\000\000\000\000\000\000\000\000\000X\363\377\277\375\222\004\b\203\227\004\b\001\000\000\000\a\000\000")
+therefore at 318, token_str = "\377\226\004\b\000\000\000\000\000\000\000\000\364?(\000\340D(\000\003\000\000\000\070\363\377\277\016\256\030\000\340D(\000і\004\b\003\000\000\000\000\370\376\267\364?(\000\000\000\000\000\000\000\000\000X\363\377\277.\221\004\bі\004\b\001\000\000\000\003\000\000" (instead of "\377\227\004\b\000\000\000\000\000\000\000\000\364?(\000\340D(\000\a\000\000\000\070\363\377\277\016\256\030\000\340D(\000\203\227\004\b\a\000\000\000\000\370\376\267\364?(\000\000\000\000\000\000\000\000\000X\363\377\277\375\222\004\b\203\227\004\b\001\000\000\000\a\000\000")
+therefore at 487, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 512, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore at 44, argv[1] = "./print_tokens/inputs/newtst146.tst" (instead of "./print_tokens/inputs/newtst148.tst")
+therefore the run fails.

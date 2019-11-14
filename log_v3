@@ -1,0 +1,668 @@
+tcas1 tcas55
+++++dd2 init finish
+abc/v3.db
+[37, 44, 75, 77, 86, 88, 100, 108, 111, 118, 120, 130, 138, 141, 154, 165, 173, 178, 205, 208, 216, 232, 245, 250, 288, 295, 304, 318, 328, 337, 338, 345, 346, 355, 363, 364, 365, 366, 367, 370, 379, 387, 388, 389, 390, 391, 392, 393, 394, 395, 398, 421, 429, 439, 440, 451, 461, 465, 467, 470, 487, 488, 511, 512, 513, 514, 515, 516, 517, 519, 521, 522, 523, 524, 525, 526, 527, 528, 530, 532, 533, 536, 564]
+++++StateDD init finish
+++++print_cause_effect_chain init finish
+
+At tcas1 tcas55 154
+------
+
+[(('FILENAME', 0), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+f:16,p:982,c_f:17,c_a:1000
+0.00534402137609 0.016
+      -------------------------                
+DD.PASS
+
+output---error,	"".
+identifier,	"lambdaNo".
+eof.
+
+Program exited normally.
+
+output_right---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+      -------------------------                
+
+c:
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[(('FILENAME', 0), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c2:
+[(('FILENAME', 0), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 77
+-----
+
+[(('FILENAME', 0), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('FILENAME', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+f:16,p:982,c_f:17,c_a:1000
+0.00534402137609 0.016
+      -------------------------                
+DD.PASS
+
+output---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+output_right---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+      -------------------------                
+
+c:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[(('FILENAME', 0), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('FILENAME', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c2:
+[(('FILENAME', 0), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('FILENAME', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 165
+------
+
+
+c:
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[(('FILENAME', 0), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c2:
+[(('FILENAME', 0), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 173
+------
+
+
+c:
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 86
+-----
+
+
+c:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 100
+------
+
+
+c:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 451
+------
+
+
+c:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 470
+------
+
+
+c:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 467
+------
+
+
+c:
+[(('argv[1]', 3), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 3), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 461
+------
+
+
+c:
+[(('argv[1]', 4), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 4), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 205
+------
+
+
+c:
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 304
+------
+
+
+c:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 108
+------
+
+
+c:
+[(('argv[1]', 3), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 3), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 120
+------
+
+
+c:
+[(('argv[1]', 3), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 3), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 564
+------
+
+
+c:
+[(('argv[1]', 3), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 3), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 328
+------
+
+
+c:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 488
+------
+
+
+c:
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 511
+------
+
+
+c:
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 178
+------
+
+
+c:
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 88
+-----
+
+
+c:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 465
+------
+
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('ch', 0), "'J'", "'l'")]
+f:33,p:4253,c_f:17,c_a:1000
+0.00256649556696 0.016
+      -------------------------                
+DD.PASS
+
+output---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+output_right---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+      -------------------------                
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('ch', 0), "'J'", "'l'"), (('ch', 1), "'J'", "'l'")]
+f:33,p:4242,c_f:17,c_a:1000
+0.0025730994152 0.016
+      -------------------------                
+DD.PASS
+
+output---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+output_right---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+      -------------------------                
+
+c:
+[(('token_str', 1), '"J\\226\\004\\b\\000\\000\\000\\000\\000\\000\\000\\000\\364?(\\000\\340D(\\000\\003\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\xd1\x96\\004\\b\\003\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277\\221\\217\\004\\b\xd1\x96\\004\\b\\001\\000\\000\\000\\003\\000\\000"', '"l\\226\\004\\b\\000\\000\\000\\000\\000\\000\\000\\000\\364?(\\000\\340D(\\000\\003\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\xd1\x96\\004\\b\\003\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277\\221\\217\\004\\b\xd1\x96\\004\\b\\001\\000\\000\\000\\003\\000\\000"')]
+c1:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('ch', 0), "'J'", "'l'"), (('ch', 1), "'J'", "'l'")]
+c2:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('ch', 0), "'J'", "'l'"), (('ch', 1), "'J'", "'l'"), (('token_str', 1), '"J\\226\\004\\b\\000\\000\\000\\000\\000\\000\\000\\000\\364?(\\000\\340D(\\000\\003\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\xd1\x96\\004\\b\\003\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277\\221\\217\\004\\b\xd1\x96\\004\\b\\001\\000\\000\\000\\003\\000\\000"', '"l\\226\\004\\b\\000\\000\\000\\000\\000\\000\\000\\000\\364?(\\000\\340D(\\000\\003\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\xd1\x96\\004\\b\\003\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277\\221\\217\\004\\b\xd1\x96\\004\\b\\001\\000\\000\\000\\003\\000\\000"')]
+
+At tcas1 tcas55 130
+------
+
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('ch', 0), "','", "-1 '\\377'")]
+f:18,p:1141,c_f:17,c_a:1000
+0.00517687661777 0.016
+      -------------------------                
+DD.PASS
+
+output---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+output_right---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+      -------------------------                
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('ch', 0), "','", "-1 '\\377'"), (('ch', 1), "','", "-1 '\\377'")]
+f:18,p:1141,c_f:17,c_a:1000
+0.00517687661777 0.016
+      -------------------------                
+DD.PASS
+
+output---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+output_right---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+      -------------------------                
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('ch', 0), "','", "-1 '\\377'"), (('ch', 1), "','", "-1 '\\377'"), (('token_ind', 1), '6', '9')]
+f:18,p:1141,c_f:17,c_a:1000
+0.00517687661777 0.016
+      -------------------------                
+DD.PASS
+
+output---error,	"".
+identifier,	"J0Bey,".
+comma.
+eof.
+
+Program exited normally.
+
+output_right---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+      -------------------------                
+
+c:
+[(('token_str', 1), '"J0Bey,\\000\\000\\000\\000\\000\\000\\364?(\\000\\340D(\\000\\003\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\xd1\x96\\004\\b\\003\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277\\221\\217\\004\\b\xd1\x96\\004\\b\\001\\000\\000\\000\\003\\000\\000"', '"lambdaNo\\377\\000\\000\\000\\364?(\\000\\340D(\\000\\003\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\xd1\x96\\004\\b\\003\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277\\221\\217\\004\\b\xd1\x96\\004\\b\\001\\000\\000\\000\\003\\000\\000"')]
+c1:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('ch', 0), "','", "-1 '\\377'"), (('ch', 1), "','", "-1 '\\377'"), (('token_ind', 1), '6', '9')]
+c2:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('ch', 0), "','", "-1 '\\377'"), (('ch', 1), "','", "-1 '\\377'"), (('token_ind', 1), '6', '9'), (('token_str', 1), '"J0Bey,\\000\\000\\000\\000\\000\\000\\364?(\\000\\340D(\\000\\003\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\xd1\x96\\004\\b\\003\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277\\221\\217\\004\\b\xd1\x96\\004\\b\\001\\000\\000\\000\\003\\000\\000"', '"lambdaNo\\377\\000\\000\\000\\364?(\\000\\340D(\\000\\003\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\xd1\x96\\004\\b\\003\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277\\221\\217\\004\\b\xd1\x96\\004\\b\\001\\000\\000\\000\\003\\000\\000"')]
+
+At tcas1 tcas55 141
+------
+
+
+c:
+[(('token_str', 1), '"J0Bey,\\000\\000\\000\\000\\000\\000\\364?(\\000\\340D(\\000\\003\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\xd1\x96\\004\\b\\003\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277\\221\\217\\004\\b\xd1\x96\\004\\b\\001\\000\\000\\000\\003\\000\\000"', '"lambdaNo\\377\\000\\000\\000\\364?(\\000\\340D(\\000\\003\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\xd1\x96\\004\\b\\003\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277\\221\\217\\004\\b\xd1\x96\\004\\b\\001\\000\\000\\000\\003\\000\\000"')]
+c1:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('ch', 0), "','", "-1 '\\377'"), (('ch', 1), "','", "-1 '\\377'"), (('token_ind', 1), '6', '9')]
+c2:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('ch', 0), "','", "-1 '\\377'"), (('ch', 1), "','", "-1 '\\377'"), (('token_ind', 1), '6', '9'), (('token_str', 1), '"J0Bey,\\000\\000\\000\\000\\000\\000\\364?(\\000\\340D(\\000\\003\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\xd1\x96\\004\\b\\003\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277\\221\\217\\004\\b\xd1\x96\\004\\b\\001\\000\\000\\000\\003\\000\\000"', '"lambdaNo\\377\\000\\000\\000\\364?(\\000\\340D(\\000\\003\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\xd1\x96\\004\\b\\003\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277\\221\\217\\004\\b\xd1\x96\\004\\b\\001\\000\\000\\000\\003\\000\\000"')]
+
+At tcas1 tcas55 216
+------
+
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('ch', 0), "','", "-1 '\\377'")]
+f:17,p:816,c_f:17,c_a:1000
+0.00680272108844 0.016
+      -------------------------                
+DD.PASS
+
+output---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+output_right---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+      -------------------------                
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('ch', 0), "','", "-1 '\\377'"), (('token_ind', 0), '5', '8')]
+f:17,p:816,c_f:17,c_a:1000
+0.00680272108844 0.016
+      -------------------------                
+DD.PASS
+
+output---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+output_right---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+      -------------------------                
+
+c:
+[(('token_str', 0), '"J0Bey\\000\\000\\000\\000\\000\\000\\000\\364?(\\000\\340D(\\000\\003\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\xd1\x96\\004\\b\\003\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277\\221\\217\\004\\b\xd1\x96\\004\\b\\001\\000\\000\\000\\003\\000\\000"', '"lambdaNo\\000\\000\\000\\000\\364?(\\000\\340D(\\000\\003\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\xd1\x96\\004\\b\\003\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277\\221\\217\\004\\b\xd1\x96\\004\\b\\001\\000\\000\\000\\003\\000\\000"')]
+c1:
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('ch', 0), "','", "-1 '\\377'"), (('token_ind', 0), '5', '8')]
+c2:
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('ch', 0), "','", "-1 '\\377'"), (('token_ind', 0), '5', '8'), (('token_str', 0), '"J0Bey\\000\\000\\000\\000\\000\\000\\000\\364?(\\000\\340D(\\000\\003\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\xd1\x96\\004\\b\\003\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277\\221\\217\\004\\b\xd1\x96\\004\\b\\001\\000\\000\\000\\003\\000\\000"', '"lambdaNo\\000\\000\\000\\000\\364?(\\000\\340D(\\000\\003\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\xd1\x96\\004\\b\\003\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277\\221\\217\\004\\b\xd1\x96\\004\\b\\001\\000\\000\\000\\003\\000\\000"')]
+
+At tcas1 tcas55 519
+------
+
+
+c:
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 379
+------
+
+
+c:
+[]
+c1:
+[]
+c2:
+[]
+
+At tcas1 tcas55 394
+------
+
+
+c:
+[]
+c1:
+[]
+c2:
+[]
+
+At tcas1 tcas55 245
+------
+
+
+c:
+[]
+c1:
+[]
+c2:
+[]
+
+At tcas1 tcas55 528
+------
+
+
+c:
+[]
+c1:
+[]
+c2:
+[]
+
+At tcas1 tcas55 111
+------
+
+
+c:
+[(('argv[1]', 3), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 3), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 118
+------
+
+[(('argv[1]', 3), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+f:16,p:982,c_f:17,c_a:1000
+0.00534402137609 0.016
+      -------------------------                
+DD.PASS
+
+output---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+output_right---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+      -------------------------                
+[(('argv[1]', 3), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('token_str', 1), '"\\377\\227\\004\\b"', '"\\377\\226\\004\\b"')]
+f:16,p:982,c_f:17,c_a:1000
+0.00534402137609 0.016
+      -------------------------                
+DD.PASS
+
+output---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+output_right---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+      -------------------------                
+
+c:
+[(('token_str', 2), '"\\377\\227\\004\\b\\000\\000\\000\\000\\000\\000\\000\\000\\364?(\\000\\340D(\\000\\a\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\\203\\227\\004\\b\\a\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277\\375\\222\\004\\b\\203\\227\\004\\b\\001\\000\\000\\000\\a\\000\\000"', '"\\377\\226\\004\\b\\000\\000\\000\\000\\000\\000\\000\\000\\364?(\\000\\340D(\\000\\003\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\xd1\x96\\004\\b\\003\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277.\\221\\004\\b\xd1\x96\\004\\b\\001\\000\\000\\000\\003\\000\\000"')]
+c1:
+[(('argv[1]', 3), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('token_str', 1), '"\\377\\227\\004\\b"', '"\\377\\226\\004\\b"')]
+c2:
+[(('argv[1]', 3), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('token_str', 1), '"\\377\\227\\004\\b"', '"\\377\\226\\004\\b"'), (('token_str', 2), '"\\377\\227\\004\\b\\000\\000\\000\\000\\000\\000\\000\\000\\364?(\\000\\340D(\\000\\a\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\\203\\227\\004\\b\\a\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277\\375\\222\\004\\b\\203\\227\\004\\b\\001\\000\\000\\000\\a\\000\\000"', '"\\377\\226\\004\\b\\000\\000\\000\\000\\000\\000\\000\\000\\364?(\\000\\340D(\\000\\003\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\xd1\x96\\004\\b\\003\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277.\\221\\004\\b\xd1\x96\\004\\b\\001\\000\\000\\000\\003\\000\\000"')]
+
+At tcas1 tcas55 318
+------
+
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+f:16,p:982,c_f:17,c_a:1000
+0.00534402137609 0.016
+      -------------------------                
+DD.PASS
+
+output---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+output_right---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+      -------------------------                
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('token_str', 0), '"\\377\\227\\004\\b"', '"\\377\\226\\004\\b"')]
+f:16,p:982,c_f:17,c_a:1000
+0.00534402137609 0.016
+      -------------------------                
+DD.PASS
+
+output---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+output_right---error,	"".
+identifier,	"J0Bey".
+comma.
+eof.
+
+Program exited normally.
+
+      -------------------------                
+
+c:
+[(('token_str', 1), '"\\377\\227\\004\\b\\000\\000\\000\\000\\000\\000\\000\\000\\364?(\\000\\340D(\\000\\a\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\\203\\227\\004\\b\\a\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277\\375\\222\\004\\b\\203\\227\\004\\b\\001\\000\\000\\000\\a\\000\\000"', '"\\377\\226\\004\\b\\000\\000\\000\\000\\000\\000\\000\\000\\364?(\\000\\340D(\\000\\003\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\xd1\x96\\004\\b\\003\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277.\\221\\004\\b\xd1\x96\\004\\b\\001\\000\\000\\000\\003\\000\\000"')]
+c1:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('token_str', 0), '"\\377\\227\\004\\b"', '"\\377\\226\\004\\b"')]
+c2:
+[(('argv[1]', 2), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"'), (('token_str', 0), '"\\377\\227\\004\\b"', '"\\377\\226\\004\\b"'), (('token_str', 1), '"\\377\\227\\004\\b\\000\\000\\000\\000\\000\\000\\000\\000\\364?(\\000\\340D(\\000\\a\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\\203\\227\\004\\b\\a\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277\\375\\222\\004\\b\\203\\227\\004\\b\\001\\000\\000\\000\\a\\000\\000"', '"\\377\\226\\004\\b\\000\\000\\000\\000\\000\\000\\000\\000\\364?(\\000\\340D(\\000\\003\\000\\000\\000\\070\\363\\377\\277\\016\\256\\030\\000\\340D(\\000\xd1\x96\\004\\b\\003\\000\\000\\000\\000\\370\\376\\267\\364?(\\000\\000\\000\\000\\000\\000\\000\\000\\000X\\363\\377\\277.\\221\\004\\b\xd1\x96\\004\\b\\001\\000\\000\\000\\003\\000\\000"')]
+
+At tcas1 tcas55 487
+------
+
+
+c:
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 512
+------
+
+
+c:
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 1), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+
+At tcas1 tcas55 44
+-----
+
+
+c:
+[(('argv[1]', 0), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+c1:
+[]
+c2:
+[(('argv[1]', 0), '"./print_tokens/inputs/newtst148.tst"', '"./print_tokens/inputs/newtst146.tst"')]
+++++cause_effect_chain
+
+result count:
+{'total': 13, 'right': 11, 'result different': 2}
+

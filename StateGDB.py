@@ -1,0 +1,201 @@
+
+import sys, os
+import string
+import re
+import time
+import popen2
+import sqlite3
+import cStringIO
+
+# Own modules
+from GDB import GDB
+from TimedMessage import TimedMessage
+from DD import DD
+from DB import DB3
+from rank import rank
+
+# GDB interface with special state fetching capability
+class StateGDB(GDB):
+    CHAR_PATTERN    = re.compile("(?P<value>\d+) +(?P<character>'.*')")
+    STRING_PATTERN  = re.compile('(?P<pointer>0x[^ ]+) +(?P<string>".*")')
+    POINTER_PATTERN = re.compile(".*(?P<value>0x[0-9a-f]+)")
+    FUNCTION_POINTER_PATTERN = re.compile(".*(?P<value>0x[0-9a-f]+) <(?P<identifier>[^>]*)>")
+
+    def _unfold_pointer(self, name, frame, value, vars):
+        if string.find(value, "(void *)") >= 0:
+            return                  # Generic pointer - ignore
+
+        if value == "0x0":
+            vars[(name, frame)] = "0x0" # NULL pointer
+            return
+
+        deref_value = self.question("output *(" + name + ")")
+
+        if deref_value[:2] == '{\n':
+            # We have a pointer structure.  Dereference elements.
+            SEP = " = "
+            for line in string.split(deref_value, "\n"):
+                separator = string.find(line, SEP)
+                if separator < 0:
+                    continue
+
+                member_name = name + "->" + line[0:separator]
+                member_value = line[separator + len(SEP):]
+
+                self._fetch_values(member_name, frame, member_value, vars)
+
+            return
+
+        if deref_value[0] == '{':
+            # Some function pointer.  Leave it unchanged.
+            return
+
+        # Otherwise, assume it's an array or object on the heap
+        # (hopefully)
+
+        if name == "argv":
+            # Special handling for program arguments.
+            elems = 4096
+        else:
+            # This trick will get the number of elements (if we use
+            # GNU malloc on Linux)
+            elems = self.question("output (((int *)(" + name +
+                                  "))[-1] & ~0x1) /" +
+                                  "sizeof(*(" + name + "))")
+
+	    if len(elems)< 20:            
+		elems = string.atoi(elems)
+	    else:
+		return
+        if elems > 10000:
+            return                      # Cannot handle this
+
+        beyond = 1                      # Look 1 elements beyond bounds
+
+        for i in range(0, elems + beyond):
+            elem_name = name + "[" + `i` + "]"
+            elem_value = self.question("output " + elem_name)
+
+            self._fetch_values(elem_name, frame, elem_value, vars)
+            if name == "argv" and elem_value == "0x0":
+                break               # Stop it
+
+
+    # Fetch a value NAME = VALUE from GDB into VARS, with special
+    # handling of pointer structures.
+    def _fetch_values(self, name, frame, value, vars):
+        value = string.strip(value)
+        value = string.replace(value, "\n", "")
+
+        # print "Handling " + name + " = " + value
+
+        # GDB reports characters as VALUE 'CHARACTER'.  Prefer CHARACTER.
+        m = self.CHAR_PATTERN.match(value)
+        if m is not None:
+            vars[(name, frame)] = m.group('character')
+            return
+
+        # GDB reports strings as POINTER "STRING".  Prefer STRING.
+        m = self.STRING_PATTERN.match(value)
+        if m is not None:
+            vars[(name, frame)] = m.group('string')
+            return
+
+        # GDB reports function pointers as POINTER <IDENTIFIER>.
+        # Prefer IDENTIFIER.
+        m = self.FUNCTION_POINTER_PATTERN.match(value)
+        if m is not None:
+            vars[(name, frame)] = m.group('identifier')
+            return
+
+        # In case of pointers, unfold the given data structure
+        if self.POINTER_PATTERN.match(value):
+            self._unfold_pointer(name, frame, value, vars)
+            return
+
+        # Anything else: Just store the value
+        vars[(name, frame)] = value
+
+
+    # Store mapping (variable, frame) => values in VARS
+    def _fetch_variables(self, frame, vars):
+        SEP = " = "
+        IDENTIFIER = re.compile("[a-zA-Z_]")
+#        print "-----------------"
+#        print self.question("info variables")
+#        print "-----------------"
+        for query in ["info locals", "info args"]:
+            list = self.question(query)
+            lines = string.split(list, "\n")
+
+            # Some values as reported by GDB are split across several lines
+            for i in range(1, len(lines)):
+                if lines[i] != "" and not IDENTIFIER.match(lines[i][0]):
+                    lines[i - 1] = lines[i - 1] + string.strip(lines[i])
+
+            for line in lines:
+                separator = string.find(line, SEP)
+                if separator > 0:
+                    name  = line[0:separator]
+                    value = line[separator + len(SEP):]
+                    self._fetch_values(name, frame, value, vars)
+
+        return vars
+
+
+    # Return mapping (variable, frame) => values
+    def state(self):
+        t = TimedMessage("Capturing state")
+        vars = {}
+        frame = 0
+        
+        reply = "#0"
+        while string.find(reply, "#") != -1:
+            reply = self.question("down")
+
+        reply = "#0"
+        while string.find(reply, "#") != -1:
+            self._fetch_variables(frame, vars)
+            reply = self.question("up")
+            frame = frame + 1
+
+        t.outcome = `len(vars.keys())` + " variables"
+        return vars
+
+    # Return (opaque) list of deltas
+    def deltas(self, state_1, state_2):
+        deltas = []
+        for var in state_1.keys():
+            value_1 = state_1[var]
+            if not state_2.has_key(var):
+                continue                # Uncomparable
+
+            value_1 = state_1[var]
+            value_2 = state_2[var]
+            if value_1 != value_2:
+                deltas.append((var, value_1, value_2))
+
+        deltas.sort()
+        return deltas
+
+
+    # Apply (opaque) list of deltas to STATE_1
+    def apply_deltas(self, deltas):
+        cmds = self.delta_cmds(deltas)
+        for cmd in cmds:
+            self.question(cmd)
+
+    def delta_cmds(self, deltas):
+        cmds = []
+        current_frame = None
+        for delta in deltas:
+            (var, value_1, value_2) = delta
+            (name, frame) = var
+            if frame != current_frame:
+                cmds.append("frame " + `frame`)
+                current_frame = frame
+
+            cmds.append("set variable " + name + " = " + value_2)
+
+        return cmds
+

@@ -1,0 +1,95 @@
+
+import sys, os
+import string
+import re
+import time
+import popen2
+import sqlite3
+import cStringIO
+
+# Own modules
+from StateGDB import StateGDB
+from StateDD import StateDD
+import check
+from versionsDebug import versionsDebug
+
+
+class Debugcase:
+    def __init__(self, right, wrong, version):
+        self.right = right
+        self.wrong = wrong
+        self.version = version
+
+debugcases = []
+myResult = {"right":0,  "total":0,  "result different":0}
+
+def initDebugcase():
+    debugcases.append(Debugcase("tcas7", "tcas802", "v1"))
+
+
+def initDebugcase2(version="v1"):
+    
+            
+    conn = sqlite3.connect("abc/"+version+".db")
+    cur1 = conn.execute("select name, para, pass from testcase where pass=0").fetchall()
+    cur2 = conn.execute("select name, para, pass from testcase where pass=1").fetchall()
+    print(cur1[0][0].strip())
+    print(cur2[0][0].strip())
+    debugcases.append(Debugcase(cur2[0][0], cur1[0][0], version))
+    #debugcases.append(Debugcase("tcas1", "tcas800", "v2"))
+
+
+
+def debug(pastcase, failcase, version):
+        # Main function begins here
+    assert os.uname()[0] == "Linux"
+    folder="print_tokens"
+    path="./"+folder+"/versions/"+version+"/"+folder
+    print pastcase,  failcase
+    dd = StateDD(path,pastcase , failcase, version)
+    print "++++StateDD init finish"
+    
+    print "++++print_cause_effect_chain init finish"
+    ss= dd.print_cause_effect_chain()
+    myResult["right"]+=dd.check.count["right"]
+    myResult["total"]+=dd.check.count["total"]
+    myResult["result different"]+=dd.check.count["result different"]
+    
+    return ss
+    print "++++--print_cause_effect_chain init finish"
+
+
+def largeDebug(v):
+    saveout = sys.stdout
+    fsave = open('log_'+v, 'w')
+    sys.stdout = fsave
+
+    log = open("result_"+v, 'w')
+
+    for debugcase in debugcases:
+        pastcase = debugcase.right
+        failcase = debugcase.wrong
+        version = debugcase.version
+        log.write("\n\npastcase:"+pastcase+"\nfailcase:"+failcase+"\n")
+        s = debug(pastcase, failcase, version)
+        log.write(s)
+
+    sys.stdout = saveout
+    log.close()
+    fsave.close()
+
+
+if __name__ == '__main__':
+ #global variable,get a list of versions
+   a=versionsDebug()
+   versions=a.getVersions()
+   for v in versions:
+     initDebugcase2(v.strip())
+     largeDebug(v.strip())
+     debugcases=[]
+   print "-------how nice for this K"+"\n"
+   print "total:"
+   print myResult["total"]
+   print "\n"
+   print "right:"
+   print myResult["right"]
